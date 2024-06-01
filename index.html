@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="icons8-chave.gif" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ab2328" />
+  <meta name="description" content="Links Das Redes Sociais da banda Sala15 | Developed By - Gabriel Corrêa" />  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>sala15oficial</title>
+  <style>
+    body {
+      background-color: #ab2328;
+    }
+    h5 {
+      color: #a68340;
+      text-align: center;
+    }
+    .name {
+      color: #343a40;
+    }
+    .love {
+      color: #343a40 !important;
+    }
+    #email {
+      text-decoration: none;
+      float: right;
+      color: #343a40;
+    }
+    .footer {
+      margin-top: 5% !important;
+      margin-bottom: 10px;
+    }
+    @media (max-width: 479px) {
+      .footer {
+        margin-top: 35% !important;
+      }
+    }
+    .profile-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .media-body {
+      text-align: center;
+    }
+    .btn-block+.btn-block {
+      margin-top: 15px;
+    }
+    .btn-animate {
+      transition: transform 0.2s;
+      background-color: #A68340;
+      border-color: #A68340;
+      color: #fff;
+    }
+    .btn-animate:hover {
+      transform: scale(1.1);
+      background-color: #8c6e30;
+      border-color: #8c6e30;
+    }
+    .welcome-text {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+<div class="container text-center">
+  <div class="media mt-5">
+    <img src="Sub2 colorido (transparente).png" class="m-3 profile-img" alt="image" width="250px" height="250px" style="position: absolute; top: 75%; left: 50%; transform: translate(-55%, -50%);">
+  </div>
+  <div class="media-body m-2">
+    <h5 class="align-items-center mt-2">BEM-VINDO</h5>
+    <p class="welcome-text">Olá! Somos a banda Sala 15 e espero que vocês gostem de nossos perfis</p>
+  </div>
+  <div class="mt-4">
+    <a href="https://www.instagram.com/sala15oficial/" class="btn btn-outline-dark btn-block btn-animate" role="button" target="_blank"><i class="fab fa-instagram">&nbsp;</i>Instagram</a>
+    <a href="https://open.spotify.com/artist/3bT4MQfF8dMeA9jq7vUGOp" class="btn btn-outline-dark btn-block btn-animate" role="button" target="_blank"><i class="fab fa-spotify">&nbsp;</i>Spotify</a>
+    <a href="https://www.tiktok.com/@sala15_?_t=8mqB1OzTxpO&_r=1" class="btn btn-outline-dark btn-block btn-animate" role="button" target="_blank"><i class="fab fa-tiktok">&nbsp;</i>TikTok</a>
+  </div>
+  <div class="footer mt-5">
+    <hr/>
+    <h6>
+      feito pelo desenvolvedor
+      <a href="/" class="name" target="_blank"> (Gabconst) </a>
+      <a id="https://www.linkedin.com/in/gabriel-corr%C3%AAa-691114290/" href="https://www.linkedin.com/in/gabriel-corr%C3%AAa-691114290/"> <i class="fa fa-envelope"> </i> </a>
+    </h6>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="welcomeModalLabel">Bem-vindo!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Olá! Somos a banda SaLa 15 e estamos felizes em recebê-lo em nosso site. Aproveite para conhecer nossos perfis!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6HJty5KVphtPhzWj9WO1clHTMGaZRIsw6L65wwjRM86d6l/8lp" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIyH8z2gj/2S7qk6j/I5k7vtQ/t2FRpajsJr69A" crossorigin="anonymous"></script>
+
+<script>
+  $(document).ready(function() {
+    $('#welcomeModal').modal('show');
+    
+    $('.btn-animate').hover(
+      function() {
+        $(this).addClass('hovered');
+      }, function() {
+        $(this).removeClass('hovered');
+      }
+    );
+  });
+</script>
+</body>
+</html>
